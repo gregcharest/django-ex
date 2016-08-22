@@ -318,6 +318,17 @@
                     "value": "${DATABASE_PASSWORD}"
                   },
                   {
+                    "name": "POSTGRESQL_ADMIN_USER",
+                    "value": "${DATABASE_ADMIN_USER}"
+                  },
+                  {
+                    "name": "POSTGRESQL_ADMIN_PASSWORD",
+                    "value": "${DATABASE_ADMIN_PASSWORD}"
+                  },
+                  
+                  
+                  
+                  {
                     "name": "POSTGRESQL_DATABASE",
                     "value": "${DATABASE_NAME}"
                   }
@@ -444,6 +455,20 @@
       "generate": "expression",
       "from": "[a-zA-Z0-9]{16}"
     },
+    {
+      "name": "DATABASE_ADMIN_USER",
+      "displayName": "Database Admin Username",
+      "required": true,
+      "value": "admin"
+    },
+    {
+      "name": "DATABASE_ADMIN_PASSWORD",
+      "displayName": "Database Admin User Password",
+      "required": true,
+      "value": "admin"
+    },
+    
+    
     {
       "name": "APP_CONFIG",
       "displayName": "Application Configuration File Path",
